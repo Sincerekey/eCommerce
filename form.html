@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the website -->
+    <title>Taurus</title>
+    <!-- Link to the external stylesheet -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body id="fbody">
+    <!-- Header section -->
+    <header>
+        <!-- Navigation menu -->
+        <nav>
+            <ul id="nav">
+                <!-- Links to other pages -->
+                <a href="index.html"> <li>Home</li></a>
+                <a href="products.html"><li>Products</li></a> 
+                <a href="form.html"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header section with contact information -->
+    <section id="header">
+        <h1>Contact Us: Concerns, Answers, Refunds, and Shipping Concerns </h1>
+        <small>*We Are Not Legally Responeible for any Injury, Malfunctions, or Misue of Any Sold Products *</small>
+    </section>
+
+    <!-- Form section -->
+    <div>
+        <!-- Form with validation on submit -->
+        <form onsubmit="return validateForm(event)">
+            <!-- First input section (names) -->
+            <section id="names" class="section">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" placeholder="Enter your first name" onkeyup="validateFname()"/><span class="span_error" id="fname-error"></span><br />
+                <br />
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" placeholder="Enter your last name" onkeyup="validateLname()"/><span class="span_error" id="lname-error"></span>
+            </section>
+            <br />
+
+            <!-- Second input section (contact info) -->
+            <section id="contact" class="section">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" onkeyup="validatePhone()" /><span class="span_error" id="phone-error"></span><br />
+                <br />
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Example@example.com" onkeyup="validateEmail()"/><span class="span_error" id="email-error"></span>
+            </section>
+            <br />
+
+            <!-- Third input section (location info) -->
+            <section id="houseLo" class="section">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Street Address" /><br />
+                <br />
+                <label for="zip">Zip Code</label>
+                <input type="number" id="zip" name="zip" placeholder="X X X X X"  onkeyup="validateZip()"/><span class="span_error" id="zip-error"></span>
+            </section>
+            <br />
+
+            <!-- Fourth input section (issue selection) -->
+            <section id="issues" class="section">
+                <label for="issues"></label>
+                <select id="issue">
+                    <option value="">--Issues--</option>
+                    <option value="refund">Refund</option>
+                    <option value="shipping">Shipping</option>
+                    <option value="seller">Become a Seller</option>
+                    <option value="product">Issue with Product</option>
+                </select>
+            </section>
+
+            <!-- Button to submit form -->
+            <section id="button">
+                <button type="submit" id="submit" >Submit</button> <br />
+                <span id="submit_error"></span>
+            </section>
+        </form>
+
+        <!-- Message section to display form submission status -->
+        <section id="message">
+            <h3 id="span_message"></h3>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Support section -->
+        <ul>
+            <li><h2>Support</h2></li>
+            <li>Customer Service</li>
+            <li>Location</li>
+            <li>FAQ</li>
+        </ul>
+        <!-- Account section -->
+        <ul>
+            <li><h2>Account</h2></li>
+            <li>Your Account</li>
+            <li>Your Orders</li>
+            <li>Shipping Rates & Policies</li>
+        </ul>
+        <!-- Get to Know Us section -->
+        <ul>
+            <li><h2>Get to Know Us</h2></li>
+            <li>Careers</li>
+            <li>Taurus Newsletter</li>
+            <li>About Taurus</li>
+        </ul>
+    </footer>
+
+    <!-- Script for form validation -->
+    <script src="script.js"></script>
+</body>
+</html>

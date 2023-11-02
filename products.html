@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taurus</title>
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+<body id="fbody">
+  <header>
+        <nav>
+            <ul id="nav">
+                <a href="index.html"> <li>Home</li></a>
+                <a href="products.html"><li>Products</li></a> 
+                <a href="form.html"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <main>
+        <!-- Tabs for different product categories -->
+        <section id="tabs">
+            <button class="tablinks" onclick="opentab(event, 'Destructive')">Destructive</button>
+            <button id="defaultTab" class="tablinks" onclick="opentab(event, 'Sales')">Sales</button>
+            <button class="tablinks" onclick="opentab(event, 'Non-Destructive')">Non-Destructive</button>
+        </section>
+
+        <!-- Sales section with individual product details -->
+        <section id="Sales" class="tabcontent">
+            <section class="product-item">
+                <h4 class="price"><s>$15.99</s> $9.99</h4>
+                <img src="RayGun-removebg-preview.png" alt="product 1/Grid 1">
+                <h2>Ray Gun</h2>
+                <p>Introducing the Ray Gun, a marvel of futuristic weaponry. Crafted with precision, this energy blaster harnesses advanced plasma technology, delivering a stunning blend of power and precision. 
+                    Ergonomically designed for comfort and efficiency, the Ray Gun is your key to a safer and more secure future.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price"><s>$20.99</s> $12.59</h4>
+                <img src="PortalG-removebg-preview.png" alt="product 2/Grid 1">
+                <h2>Portal Gun</h2>
+                <p>Dive into the future with the Portal Gun, a groundbreaking device that bends the fabric of space and time. With state-of-the-art quantum manipulation, 
+                    this gun opens gateways to alternate dimensions. Lightweight and versatile, it's a must-have tool for adventurers and explorers seeking the unknown.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price"><s>$66.99</s> $59.99</h4>
+                <img src="DupGun-removebg-preview.png" alt="product 3/Grid 1">
+                <h2>Duplication Gun</h2>
+                <p>Upgrade your toolkit with the Duplication Gun, a futuristic 3D printer in the palm of your hand. This advanced device replicates objects at the molecular level, 
+                    ensuring an exact duplicate every time. Whether you need spare parts or want to share your favorite gadgets, the Duplication Gun is your key to innovation.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price"><s>$30.00</s> $19.99</h4>
+                <img src="s-l1200-removebg-preview.png" alt="product 4/Grid 1">
+                <h2>Light Saber</h2>
+                <p>Illuminate your path with the Light Saber, a fusion of futuristic design and cutting-edge technology. Crafted with energy-efficient materials, these socks provide unparalleled comfort. 
+                    With a heavy cushion, they keep your feet relaxed and ready for any adventure the future holds.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price"><s>$360.99</s> $309.99</h4>
+                <img src="chip-removebg-preview.png" alt="product 1/Grid 2">
+                <h2>Pre-Downloaded AI SD Card</h2>
+                <p>Elevate your data experience with the Pre-Downloaded AI SD Card, a revolutionary storage solution powered by artificial intelligence. This advanced card adapts to your data needs, 
+                    organizing and accessing information in real-time. Embrace the future of data storage with seamless integration and efficiency.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$32.58</h4>
+                <img src="IWhat_If_Machine__A_Rapberry_Pi-powered_tv_from_Futurama__by_remoheadder_-_Thingiverse-removebg-preview.png" alt="product 2/Grid 2">
+                <h2>What if Machine</h2>
+                <p>Embark on a journey of endless possibilities with the What if Machine. Resembling a futuristic television set, this device predicts the outcome of any "What if?" question. 
+                    Limited to three predictions per year, it unfolds alternate realities with astonishing accuracy. Explore scenarios like never before and unlock the secrets of the multiverse.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$88.49</h4>
+                <img src="8c008c20df6d06664ea6ae1b2f47d2f2-removebg-preview.png" alt="product 3/Grid 2">
+                <h2>Hover Board</h2>
+                <p>Soar to new heights with the Hover Board, a revolutionary floating device that defies gravity. This real hover board allows you to fly up to 7 feet off the ground, reaching speeds of up to 45mph. 
+                    Experience the freedom of futuristic transportation as you glide effortlessly through the air. Note: Always follow safety guidelines and regulations while flying.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$24.99</h4>
+                <img src="mrsy100lg-removebg-preview.png" alt="product 4/Grid 2">
+                <h2>Neutralizer (M.I.B)</h2>
+                <p>Enter the world of forgetfulness with the Neutralizer (M.I.B). This compact device emits a super-bright flash capable of erasing memories. Handle with care and use responsibly.
+                     Warning: Frequent use may result in adverse effects, including potential brain damage. For your safety, it is recommended to wear heat protectant gloves, as the device reaches temperatures of up to 100 degrees after each use. Remember, with great power comes great responsibility.</p>
+            </section>
+        </section>
+            
+        <!-- Destructive section with individual product details -->
+        <section id="Destructive" class="tabcontent">
+            <section class="product-item">
+                <h4 class="price">$129.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 9/Grid Destructive">
+                <h2>Temporal Disruptor</h2>
+                <p>Unleash chaos with the Temporal Disruptor, a handheld device that distorts the fabric of reality itself. This weapon disrupts quantum fields, causing temporary glitches in time and space. Use with extreme caution, as the consequences of altering reality are unpredictable.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$299.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 10/Grid Destructive">
+                <h2>Nano Virus Injector</h2>
+                <p>Inject mayhem into your foes with the Nano Virus Injector. This compact device releases microscopic nanobots programmed to infect and disrupt biological systems. Handle with care, as the effects are irreversible and can lead to catastrophic consequences.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$49.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 11/Grid Destructive">
+                <h2>Graviton Warp Generator</h2>
+                <p>Bend the laws of physics with the Graviton Warp Generator. This portable device allows you to manipulate gravitational fields, causing objects to levitate or collapse under intense pressure. Exercise caution, as misuse may result in catastrophic gravitational anomalies.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$199.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 12/Grid Destructive">
+                <h2>Plasma Annihilator</h2>
+                <p>Bring destruction to the next level with the Plasma Annihilator. Emitting powerful plasma bursts, this weapon disintegrates matter at a molecular level. Handle with extreme care, as the intense heat can melt through virtually any material.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$179.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 13/Grid Destructive">
+                <h2>Chrono Destructor</h2>
+                <p>Manipulate time itself with the Chrono Destructor. This device disrupts the chronological flow, causing targeted objects to age rapidly or regress to a previous state. Use responsibly, as altering the timeline may have unintended consequences.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$399.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 14/Grid Destructive">
+                <h2>Quantum Singularity Cannon</h2>
+                <p>Unleash the power of a black hole with the Quantum Singularity Cannon. This handheld cannon creates miniature quantum singularities, collapsing space and time within a localized area. Extreme caution is advised, as the gravitational forces can have catastrophic effects.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$149.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 15/Grid Destructive">
+                <h2>Nanite Swarm Emitter</h2>
+                <p>Unleash a horde of destructive nanites with the Nanite Swarm Emitter. This device releases a cloud of microscopic robots programmed to disassemble and consume any matter in their path. Handle with care, as the nanites can be difficult to control once released.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$259.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 16/Grid Destructive">
+                <h2>Quantum Destabilizer</h2>
+                <p>Destabilize the very fabric of reality with the Quantum Destabilizer. Emitting quantum fluctuations, this device creates unpredictable disruptions in the surrounding environment. Use at your own risk, as the consequences of destabilizing quantum fields are unknown.</p>
+            </section>
+        </section>
+
+        <!-- Non-Destructive section with individual product details -->
+        <section id="Non-Destructive" class="tabcontent">
+            <section class="product-item">
+                <h4 class="price">$79.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 17/Grid Non-Destructive">
+                <h2>Teleportation Bracelet</h2>
+                <p>Experience instant travel with the Teleportation Bracelet. This stylish accessory allows you to teleport to any pre-set location with a simple touch. Say goodbye to long commutes and hello to a new era of convenience.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$149.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 18/Grid Non-Destructive">
+                <h2>Mind Enhancer Headset</h2>
+                <p>Upgrade your cognitive abilities with the Mind Enhancer Headset. This advanced device stimulates neural pathways, enhancing memory, focus, and creativity. Unlock your full mental potential without any side effects.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$39.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 19/Grid Non-Destructive">
+                <h2>Holographic Entertainment System</h2>
+                <p>Immerse yourself in a world of holographic entertainment with this state-of-the-art system. Enjoy lifelike holograms for gaming, movies, and more. The future of entertainment is now at your fingertips.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$199.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 20/Grid Non-Destructive">
+                <h2>Biometric Health Scanner</h2>
+                <p>Monitor your health with precision using the Biometric Health Scanner. This handheld device provides real-time analysis of vital signs, offering personalized health recommendations for a proactive approach to well-being.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$119.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 21/Grid Non-Destructive">
+                <h2>Universal Language Translator</h2>
+                <p>Break down language barriers with the Universal Language Translator. This compact device instantly translates spoken words, making communication seamless and effortless. Connect with people from around the world effortlessly.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$299.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 22/Grid Non-Destructive">
+                <h2>Anti-Gravity Backpack</h2>
+                <p>Experience weightlessness with the Anti-Gravity Backpack. This innovative backpack utilizes advanced technology to reduce the effect of gravity on your belongings, making every journey a breeze.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$89.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 23/Grid Non-Destructive">
+                <h2>Augmented Reality Glasses</h2>
+                <p>Step into the future with Augmented Reality Glasses. These sleek glasses overlay digital information onto your physical surroundings, enhancing your daily experiences with interactive and immersive elements.</p>
+            </section>
+            
+            <section class="product-item">
+                <h4 class="price">$179.99</h4>
+                <img src="No-Image-Placeholder.svg.png" alt="product 24/Grid Non-Destructive">
+                <h2>Personal Climate Control Device</h2>
+                <p>Stay comfortable in any environment with the Personal Climate Control Device. This compact gadget adjusts the temperature around you, ensuring the perfect climate no matter where you are.</p>
+            </section>
+        </section>
+    </main>
+   <!-- Footer section -->
+   <footer>
+    <!-- Support section -->
+    <ul>
+        <li><h2>Support</h2></li>
+        <li>Customer Service</li>
+        <li>Location</li>
+        <li>FAQ</li>
+    </ul>
+    <!-- Account section -->
+    <ul>
+        <li><h2>Account</h2></li>
+        <li>Your Account</li>
+        <li>Your Orders</li>
+        <li>Shipping Rates & Policies</li>
+    </ul>
+    <!-- Get to Know Us section -->
+    <ul>
+        <li><h2>Get to Know Us</h2></li>
+        <li>Careers</li>
+        <li>Taurus Newsletter</li>
+        <li>About Taurus</li>
+    </ul>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
