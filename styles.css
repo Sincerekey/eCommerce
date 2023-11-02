@@ -381,6 +381,7 @@ s{
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
 @media screen and (max-width:480px){
     main{
         height: 100%;
@@ -406,11 +407,20 @@ s{
     }
     
     footer{
-        position: relative;
+        position: absolute;
         bottom: 0;
     }
+    form, #header{
+        font-size: 3rem;
+    }
+    div{
+        height: auto;
+    }
+    form{
+        height: auto;
+    }
 }
-@media screen and (min-width:481px) and (max-width:700px){
+@media screen and (min-width:481px){
     main{
         overflow: scroll;
     }
@@ -428,7 +438,7 @@ s{
         font-size: 2rem;
     }
     footer{
-        bottom: auto;
+        bottom: 0;
     }
 }
 @media screen and (min-width: 970px){
@@ -436,11 +446,14 @@ s{
     form, #header{
         font-size: 5rem;
     }
+    form{
+        height: 100%;
+    }
     small{
         font-size: 2rem;
     }
     footer{
-        bottom: auto;
+        bottom: 0;
     }
     #Sales, #Destructive, #Non-Destructive{
         font-size: 100px;
